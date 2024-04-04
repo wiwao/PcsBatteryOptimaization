@@ -7,3 +7,13 @@
 また、負の値（消費電力が発電電力を上回る場合）を特に分析し、これらの値の分布を調べることで、必要な蓄電池容量の見積もりに役立てています。これにより、夜間の電力需要を満たすために必要な最小限の蓄電池容量を推定し、雨天時の連続した日々に対する蓄電池の容量要求を評価しています。
 
 最後に、負の累積和の大きさを分析することで、蓄電池の容量がどれほどあれば十分かを評価しており、さらに、累積和が特定の閾値を超えるか、または下回る場合のシナリオをシミュレーションしています。これにより、蓄電池の最適容量設定に関する洞察を提供し、太陽光発電を利用した自家消費システムの効率化を目指しています。
+
+Here is an English translation:
+
+This document describes a method for optimizing the capacity of a battery for self-consumption, without using power or demand forecasting. It utilizes data on solar power generation and power consumption (at one-minute intervals). The document explains how to analyze the data and create graphs using MATLAB, and provides examples of data processing and visualization using Pandas and Matplotlib.
+
+Primarily, it analyzes the solar power generation and power consumption data collected at one-minute intervals. It calculates the difference between these two (generation minus consumption), which is a crucial indicator for battery charging and discharging. The document demonstrates how to evaluate the daily and monthly power usage patterns using this difference and optimize the battery charge and discharge cycles.
+
+Additionally, it particularly analyzes negative values (when consumption exceeds generation) and examines their distribution to estimate the required battery capacity. This helps determine the minimum battery capacity needed to meet nighttime power demands and assess the capacity requirements for consecutive rainy days.
+
+Furthermore, by analyzing the magnitude of the negative cumulative sum, it evaluates whether a given battery capacity would be sufficient. It also simulates scenarios where the cumulative sum exceeds or falls below a certain threshold. This provides insights into optimal battery capacity settings, aiming to improve the efficiency of self-consumption systems utilizing solar power generation.
